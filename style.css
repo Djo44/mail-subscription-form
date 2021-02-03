@@ -1,0 +1,241 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Franklin', sans-serif;
+
+  overflow: hidden;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.naslov {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.naslov>h5 {
+  margin-top: 0;
+}
+
+.naslov>h1 {
+  color: hsl(0, 0%, 59%);
+}
+
+.naslov>h1>span {
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 10rem;
+
+  font-style: italic;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
+
+.siteContainer {
+  height: 100vh;
+  margin-top: 6rem;
+  margin-bottom: -11rem;
+
+}
+
+#image {
+  height: 500px;
+  width: 100%;
+  background-image: url(images/illustration-dashboard.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 550px 350px;
+  background-position: center;
+
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fab {
+
+  color: hsl(223, 87%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+
+
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+#email {
+  width: 400px;
+  height: 3rem;
+  margin-right: 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  outline: none;
+}
+
+#submit {
+  width: 150px;
+  height: 3rem;
+  margin-left: 0.5rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: hsl(223, 100%, 88%);
+
+
+}
+
+input[type=email] {
+
+  padding: 0px 2rem;
+
+  box-sizing: border-box;
+}
+
+.fab:hover {
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  bodym html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  #email {
+    width: 300px;
+    height: 3rem;
+
+    border-radius: 1.5rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    outline: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+
+  }
+
+  #submit {
+    width: 300px;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    position: relative;
+
+
+  }
+
+  input[type=email] {
+
+    padding: 0px 5rem;
+
+    box-sizing: border-box;
+  }
+
+  #image {
+    height: 200px;
+    width: 100%;
+    background-image: url(images/illustration-dashboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    background-position: center;
+    position: relative;
+    top: 35px;
+
+
+
+  }
+
+  .naslov>h5 {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .fab {
+    position: relative;
+    bottom: 100px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5px;
+    bottom: 65px;
+    font-style: italic;
+    font-size: 12px;
+    color: red;
+    visibility: visible;
+  }
+
+}
